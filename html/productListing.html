@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSC225 Project 2 - Product listing</title>
+
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+            <a class="navbar-brand text-black ps-4">CSC225 Project 2</a>
+            <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex ms-auto">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link text-black me-5 px-0" href="./index.html"><i
+                                    class="fas fa-home fs-6 pe-2"></i>Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black me-5 px-0" href="./about.html"><i
+                                    class="far fa-address-card fs-6 pe-2"></i>About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black me-5 px-0" href="./productListing.html"><i
+                                    class="fas fa-list fs-6 pe-2"></i>Product listing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black me-5 px-0" href="./yourCart.html"><i
+                                    class="fas fa-shopping-cart fs-6 pe-2"></i>Your Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-black me-1 px-0" href="./checkout.html"><i
+                                    class="fas fa-receipt fs-6 pe-2"></i>Checkout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid products-img d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-12 products-title display-5 animate__animated animate__fadeIn"> Our Products </div>
+        </div>
+    </div>
+
+
+    <div class="products-nav">
+        <div class="container-fluid">
+            <div class="row list-unstyled py-4 text-center">
+                <div class="col-4">
+                    <li>
+                        <a class="products-nav-link text-decoration-none" href="#men">Men</a>
+                    </li>
+                </div>
+                <div class="col-4">
+                    <li>
+                        <a class="products-nav-link text-decoration-none" href="#women">Women</a>
+                    </li>
+                </div>
+                <div class="col-4">
+                    <li>
+                        <a class="products-nav-link text-decoration-none" href="#kids">Kids</a>
+                    </li>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="bg-dark">
+
+        <div class="container-fluid products-container py-5" id="men">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center products-demo-title">Men</h2>
+                </div>
+            </div>
+            <div class="row text-center mt-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image1.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Old Skool</h5>
+                            <p class="card-text">$60</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image2.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Glow Frights Old Skool</h5>
+                            <p class="card-text">$65</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-0 mt-lg-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image3.jpg" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Adidas NMD_R1 SHOES</h5>
+                            <p class="card-text">$140</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image4.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nike Air Huarache</h5>
+                            <p class="card-text">$120</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid products-container py-5" id="women">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center products-demo-title">Women</h2>
+                </div>
+            </div>
+            <div class="row text-center mt-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image5.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Pig Suede Authentic</h5>
+                            <p class="card-text">$60</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image6.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Old Skool</h5>
+                            <p class="card-text">$60</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-0 mt-lg-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image7.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Adidas Cloudfoam Pure 2.0</h5>
+                            <p class="card-text">$63</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image8.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nike Air Force 1 Crater FlyKnit</h5>
+                            <p class="card-text">$110</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid products-container py-5" id="kids">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center products-demo-title">Kids</h2>
+                </div>
+            </div>
+            <div class="row text-center mt-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image9.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Utility Gradient Old Skool</h5>
+                            <p class="card-text">$42</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image10.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Vans Utility Gradient Old Skool</h5>
+                            <p class="card-text">$42</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center mt-0 mt-lg-5 products-columns d-flex justify-content-center align-items-center">
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image11.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Adidas Superstar</h5>
+                            <p class="card-text">$45</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="card shoes-card">
+                        <img src="/images/products-page/image12.png" class="card-img-top" alt="">
+                        <div class="card-body">
+                            <h5 class="card-title mb-3">Nike Court Borough Mid 2</h5>
+                            <p class="card-text">$50</p>
+
+                            <a class="btn btn-success">Add to Cart</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer py-4 text-center">
+        <i class="fas fa-shoe-prints pe-3"></i> Copyright &copy; 2021 Bola Ghaly <i class="fas fa-shoe-prints ps-3"></i>
+    </footer>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

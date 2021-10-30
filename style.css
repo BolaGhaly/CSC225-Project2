@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgb(47, 55, 63);
+    background: linear-gradient(90deg, rgba(47, 55, 63, 1) 0%, rgba(22, 28, 36, 1) 100%);
+    font-family: 'Poppins', sans-serif !important;
+}
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/*-------------------------------------- Bootstrap Classes ----------------------------------*/
+.container-fluid {
+    padding: 0;
+}
+
+.row {
+    --bs-gutter-x: 0 !important;
+}
+
+/*-------------------------------------- Navbar ----------------------------------*/
+.navbar {
+    background-color: rgb(200, 200, 200);
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+/* Edit color of hamburger menu button */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 10%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.nav-link:hover {
+    color: #00657e !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 991px) {
+    .nav-link {
+        padding: 0 !important;
+        margin: 10px 0 10px 24px !important;
+    }
+}
+
+/*-------------------------------------- Footer ----------------------------------*/
+.footer {
+    color: rgb(200, 200, 200);
+}
+
+/*-------------------------------------- Home ----------------------------------*/
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)), url(./images/home-page/intro-img.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 75vh;
+    color: rgb(200, 200, 200);
+
+}
+
+.hero-container {
+    background: rgb(47, 55, 63);
+    background: linear-gradient(90deg, rgba(47, 55, 63, 1) 0%, rgba(22, 28, 36, 1) 100%);
+    max-width: 1000px;
+    padding: 10px 30px;
+    margin: 0 40px;
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+
+.home-container {
+    background-color: rgb(200, 200, 200);
+}
+
+.home-container-title {
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.home-container-text {
+    font-weight: 500;
+    font-size: 22px;
+}
+
+
+@media screen and (max-width: 991px) {
+    .home-container-col {
+        padding-top: 40px;
+    }
+
+    .home-container-col:first-child {
+        padding-top: 0;
+    }
+}
+
+/*-------------------------------------- About ----------------------------------*/
+.about-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.85)), url(./images/about-page/background-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: calc(100vh - 56px);
+    width: 100%;
+}
+
+.about-container {
+    color: rgb(200, 200, 200);
+    letter-spacing: 1px;
+}
+
+.about-title {
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.about-title:after {
+    content: ' ';
+    margin-top: 2px;
+    display: block;
+    border: 2px solid #00657e;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    font-weight: 400;
+    padding-top: 30px;
+}
+
+
+/* For mobile */
+@media screen and (max-width: 424px) {
+    .about-title {
+        font-size: 40px;
+    }
+
+    .about-text {
+        font-size: 17px;
+    }
+}
+
+
+/*-------------------------------------- Product listing ----------------------------------*/
+
+.shoes-card {
+    width: 320px;
+}
+
+.card-title {
+    font-size: 18px;
+    padding: 0 10px;
+}
+
+.products-container {
+    padding: 0 50px !important;
+}
+
+.products-img {
+    background: linear-gradient(rgba(0, 0, 0, 0.80), rgba(0, 0, 0, 0.80)), url(./images/products-page/intro-img.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+}
+
+.products-title {
+    color: rgb(200, 200, 200);
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.products-nav {
+    background-color: rgb(200, 200, 200);
+    border-bottom: 5px solid #00657e;
+}
+
+.products-nav-link {
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.products-nav-link:hover {
+    color: black;
+}
+
+.products-demo-title {
+    color: rgb(200, 200, 200);
+}
+
+
+@media screen and (max-width: 991px) {
+    .products-columns {
+        flex-direction: column;
+    }
+
+    .shoes-card {
+        margin-bottom: 50px;
+    }
+}
+
+/*-------------------------------------- Your Cart ----------------------------------*/
+.total-container {
+    background-color: blanchedalmond;
+}
+
+.your-cart-title {
+    color: rgb(200, 200, 200);
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+
+/*-------------------------------------- Checkout ----------------------------------*/
+.checkout-title {
+    color: rgb(200, 200, 200);
+    text-shadow: rgb(0, 0, 0) 0px 0px 10px;
+}
+
+.checkout-dropdown {
+    display: block;
+    width: 75%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+.checkout-total-container {
+    background-color: blanchedalmond;
+    height: fit-content;
+}
+
+
+.checkout-or-title {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
+.checkout-or-title span { 
+    background: #F8F9FA;
+    padding:0 10px; 
+}
